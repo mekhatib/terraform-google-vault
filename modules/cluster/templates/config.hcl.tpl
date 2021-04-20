@@ -21,11 +21,19 @@ seal "gcpckms" {
   crypto_key = "${kms_crypto_key}"
 }
 
-# Enable HA backend storage with GCS
-storage "gcs" {
-  bucket     = "${storage_bucket}"
-  ha_enabled = "true"
+
+#Enable Raft
+storage "raft" {
+  path    = "/etc/vault.d/data"
+  node_id = "Mahil1"
 }
+
+
+# Enable HA backend storage with GCS
+#storage "gcs" {
+ # bucket     = "${storage_bucket}"
+ # ha_enabled = "true"
+#}
 
 # Create local non-TLS listener
 listener "tcp" {
