@@ -39,6 +39,9 @@ fi
 # Add Vault user
 useradd -d /etc/vault.d -s /bin/false vault
 
+# Vault config dir for raft data
+mkdir -p /etc/vault.d/data
+
 # Vault config
 mkdir -p /etc/vault.d
 mkdir /etc/vault.d/plugins
