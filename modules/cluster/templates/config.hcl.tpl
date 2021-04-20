@@ -24,7 +24,7 @@ seal "gcpckms" {
 
 #Enable Raft
 storage "raft" {
-  path    = "/etc/vault.d/data"
+  path    = "/etc/vault.d/raft"
   node_id = "Mahil1"
 }
 
