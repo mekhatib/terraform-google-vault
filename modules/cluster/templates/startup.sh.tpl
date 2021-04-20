@@ -40,8 +40,8 @@ fi
 useradd -d /etc/vault.d -s /bin/false vault
 
 # Vault config dir for raft data
-mkdir -p /etc/vault.d/data
-chmod 777 /etc/vault.d/data
+mkdir -p /etc/vault.d/raft
+chmod 777 /etc/vault.d/raft
 
 # Vault config
 mkdir -p /etc/vault.d
